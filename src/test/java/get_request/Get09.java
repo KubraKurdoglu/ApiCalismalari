@@ -73,7 +73,8 @@ public class Get09 extends HerOkuAppBaseUrl {
         assertEquals(expectedData.get("depositpaid"), actualData.get("depositpaid"));
 
 
-        //Value olarak "Object" data tipi dönen değerleri Casting yaparak asıl data türüne çeviriyoruz ve methodlara bu yöntem ile ulaşabiliyoruz.
+        //Value olarak "Object" data tipi dönen değerleri Casting yaparak asıl data türüne
+        // çeviriyoruz ve methodlara bu yöntem ile ulaşabiliyoruz.
         assertEquals(bookingdatesMap.get("checkin"), ((Map) actualData.get("bookingdates")).get("checkin"));
         assertEquals(bookingdatesMap.get("checkout"), ((Map) actualData.get("bookingdates")).get("checkout"));
 

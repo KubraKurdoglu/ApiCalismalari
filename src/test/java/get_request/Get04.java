@@ -63,7 +63,7 @@ And
         //yukarda "id" leri list olarak bize dondurdu, istesek icicne "title", "completed" de yazabilirdik
         //o zaman onlari dondurecekti.
         //Path icine(yani su an 'id' yazdigimiz yer) bir sey yazmasak tum bilgileri (id, title, completed vs. dondurecek)
-        //response==> bir list ldugu icin, cicne hib-cbir sey koymasak da tum verileri bize dondurecektir
+        //response==> bir list ldugu icin, icine hibbir sey koymasak da tum verileri bize dondurecektir
 
         //**************************
         // hasSize() methodu eleman sayısını assert eder
