@@ -54,7 +54,10 @@ public class Get08_1 extends JsonPlaceHolderBaseUrl {
 
         //Do assertion
 
-        Map<String, Object> actualData =  response.as(HashMap.class);
+        Map<String, Object> actualData =  response.as(HashMap.class);//de-serilaization (jason u java dan gelen map e cevirdi)
+        //gelen datayi Map'e cevirdi, cunku api araciligiyla
+        //bize gelen data json data seklinde, karsilastirma yapabilmek icin onu Map e cevirmek gerekiyor. (Ek bilgi Map lerde "Put" ile
+        //eleman ekliyorsun
         System.out.println(actualData);
 
         assertEquals(200, response.statusCode());
