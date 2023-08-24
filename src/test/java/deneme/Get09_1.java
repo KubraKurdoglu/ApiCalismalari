@@ -67,7 +67,9 @@ public class Get09_1 extends HerOkuAppBaseUrl {
 
         //Do assertion
 
-        Map<String , Object>  actualData =  response.as(HashMap.class);
+        Map<String , Object>  actualData =  response.as(HashMap.class);//once inner map i olusturman lazim
+        //gelan data json formatta oldugu icin onu, java ya(map) cevirdi. de-serialization
+
         System.out.println("actualData = " + actualData);
 
         assertEquals(expectedData.get("firstname"), actualData.get("firstname"));
