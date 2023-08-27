@@ -2,7 +2,9 @@ package pojos;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-@JsonIgnoreProperties(ignoreUnknown = true)
+@JsonIgnoreProperties(ignoreUnknown = true)//bunu taninmayan datayi ignore etmek icin kullandik
+//yani biz response aldigimiz zaman bize ek olarak "id" geliyor ama biz o id'yi assertion yapamiyoruz
+//boyle olu,ca o gelen "id" yi ignore ederek, cunku bilinmyene data o, bu hatadan korunmus oluyoruz
 public class JsonPlaceHolderPojo {
 
     //1.private variable olustur
