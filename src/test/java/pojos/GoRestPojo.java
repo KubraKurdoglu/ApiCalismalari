@@ -5,9 +5,7 @@ public class GoRestPojo {
     private Object meta;
     private GoRestDataPojo data;
 
-
-    public GoRestPojo(Object meta) {
-        this.meta = meta;
+    public GoRestPojo() {
     }
 
     public GoRestPojo(Object meta, GoRestDataPojo data) {

@@ -35,11 +35,11 @@ public class Get12 extends GoRestBaseUrl {
     @Test//(L_JUnittten import ediyoruz)
     public void get12() {
         //Set the url
-        spec.pathParams("first", "users", "second", "2587");
+        spec.pathParams("first", "users", "second", 4890249);
 
         //set the expected data
-        GoRestDataPojo goRestDataPojo =  new GoRestDataPojo("Ganapati Prajapat","prajapat_ganapati@okeefe.org",
-                "female", "active");
+        GoRestDataPojo goRestDataPojo =  new GoRestDataPojo("Anasuya Johar","anasuya_johar@barton.test",
+                "male", "active");
         GoRestPojo expectedData =  new GoRestPojo(null, goRestDataPojo);
         System.out.println("expectedData = " + expectedData);
 
@@ -65,7 +65,17 @@ public class Get12 extends GoRestBaseUrl {
         //yazabilirsin
 
         //bir de burda "setter" lari kullanmadik, ama data degistirilmesi gereken yerde kullanilabilir
+    }
 
+    @Test
+    public void test02(){
+
+        //set the url
+        spec.pathParams("first", "users", "second", 2587);
+
+        //set the expected data
+
+        new GoRestDataPojo("Ganapati Prajapat", "prajapat_ganapati@okeefe.org", "female", "active");
 
 
 
