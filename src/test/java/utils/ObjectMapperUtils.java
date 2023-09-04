@@ -7,6 +7,7 @@ public class ObjectMapperUtils {
 
     //<T> T --> Herhangi bir data tipini temsil eder.
     //readValue() methodu birinci parametrede belirtilen String json datayı ikinci parametrede belirtilen data tipine çevirir.
+    //asagidaki bir method, adi convert yani degistir, json datayi java ya cevir
     public static <T> T convertJsonToJava(String json, Class<T> cls) {//Generic Method
 
         try {

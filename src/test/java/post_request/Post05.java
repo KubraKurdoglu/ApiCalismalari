@@ -38,9 +38,17 @@ public class Post05 extends JsonPlaceHolderBaseUrl {
         //sceurity ve hiz acisindan daha iyi object mapper
         //Object mapper iki turlu ceviri yapiyor
         // object mapper ile DESERIALIZATION YAP
-        //
+        //pojo class kullan, pojo class i test datasi olarak kullan
+
 
         Map<String, Object> actualData = new ObjectMapper().readValue(response.asString(), HashMap.class);
+        System.out.println("actualData = " + actualData);
+
+
+        assertEquals(201, response.getStatusCode());
+        assertEquals(expectedData.get("completed"), actualData.get("completed"));
+        assertEquals(expectedData.get("title"), actualData.get("title"));
+        assertEquals(expectedData.get("userId"), actualData.get("userId"));
 
 
 
