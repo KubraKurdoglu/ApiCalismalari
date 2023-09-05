@@ -28,6 +28,7 @@ public class Get13_ObjectMapper_Map extends JsonPlaceHolderBaseUrl {
                 "}";
 
        Map<String, Object> expecteddata =  ObjectMapperUtils.convertJsonToJava(body, HashMap.class);
+        System.out.println("expecteddata = " + expecteddata);
 
         //sen the request and get the response
         Response response  = given(spec).get("{first}/{second}");
@@ -38,12 +39,9 @@ public class Get13_ObjectMapper_Map extends JsonPlaceHolderBaseUrl {
         System.out.println("actualData = " + actualData);
 
         assertEquals(200, response.statusCode());
-       // assertEquals(expecteddata.get);
-
-
-
-
-
+        assertEquals(expecteddata.get("userId"), actualData.get("userId"));
+        assertEquals(expecteddata.get("title"), actualData.get("title"));
+        assertEquals(expecteddata.get("completed"), actualData.get("completed"));
 
     }
 }
