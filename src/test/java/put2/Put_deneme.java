@@ -1,18 +1,12 @@
 package put2;
 
-import base_urls.DummyRestApiBaseUrl;
 import base_urls.JsonPlaceHolderBaseUrl;
 import io.restassured.response.Response;
 import org.junit.Test;
-import pojos.JsonPlaceHolderPojo;
-import test_data.JsonPlaceHolderTestData;
-import utils.ObjectMapperUtils;
-
-import java.util.HashMap;
 
 import static io.restassured.RestAssured.given;
 
-public class Put03 extends JsonPlaceHolderBaseUrl {
+public class Put_deneme extends JsonPlaceHolderBaseUrl {
 
     /*
     Given
