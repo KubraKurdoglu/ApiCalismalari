@@ -60,6 +60,5 @@ public class C02 extends JsonPlaceHolderBaseUrl{
 
 
         }
-    }
 
 }
