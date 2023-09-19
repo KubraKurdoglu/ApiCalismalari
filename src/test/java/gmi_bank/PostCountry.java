@@ -68,8 +68,6 @@ public class PostCountry extends GmiBankBaseUrl {
      */
 
 
-
-
     @Test
     public void postCountry() {
 
