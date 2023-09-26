@@ -39,6 +39,10 @@ public class Put02 extends DummyRestApiBaseUrl {
         assertEquals(expectedData.getEmployee_name(),actulaData.getData().getEmployee_name());
         assertEquals(expectedData.getProfile_image(),actulaData.getData().getProfile_image());
 
+        //tum body'i assert edeceksek
+        assertEquals("success", actulaData.getStatus());
+
+
 
 
 
