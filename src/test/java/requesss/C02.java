@@ -1,17 +1,15 @@
-package put_request;
+package requesss;
 
 import base_urls.HerOkuAppBaseUrl;
 import io.restassured.response.Response;
 import org.junit.Test;
 import pojos.BookingDatesPojo;
 import pojos.BookingPojo;
-import pojos.BookingResponsePojo;
 
 import static herokuapp_smoketest.C01_PostRequest.bookingId;
 import static io.restassured.RestAssured.given;
 
-public class Put03 extends HerOkuAppBaseUrl {
-
+public class C02 extends HerOkuAppBaseUrl {
     @Test
     public void test01(){
         //set the url
