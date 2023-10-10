@@ -1,6 +1,6 @@
-package odev.odev02;
+package requesss;
 
-import base_urls.HerOkuAppBaseUrl;
+import base_urls.JsonPlaceHolderBaseUrl;
 import io.restassured.response.Response;
 import org.junit.Test;
 
@@ -8,20 +8,7 @@ import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-public class Odev01 extends HerOkuAppBaseUrl {
-
-     /*
-        Given
-            https://restful-booker.herokuapp.com/booking?firstname=Josh&lastname=Allen  ==> Data değişebilir
-        When
-            User sends get request to the URL
-        Then
-            Status code is 200
-	  	And
-	  		Among the data there should be someone whose firstname is "Josh" and lastname is "Allen"   ==> Data değişebilir
-
-     */
-
+public class C05 extends JsonPlaceHolderBaseUrl {
     @Test
     public void test01(){
         //set the url
@@ -40,5 +27,4 @@ public class Odev01 extends HerOkuAppBaseUrl {
         assertTrue(response.asString().contains("bookingid"));
         //assertEquals();
     }
-
 }
