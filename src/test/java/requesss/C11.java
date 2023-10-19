@@ -1,14 +1,13 @@
 package requesss;
 
 import base_urls.GoRestBaseUrl;
-import base_urls.JsonPlaceHolderBaseUrl;
 import io.restassured.response.Response;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class C10 extends GoRestBaseUrl {
-      /*
+public class C11 extends GoRestBaseUrl {
+     /*
         Given
             https://reqres.in/api/users/3
         When
