@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class C14 extends GmiBankBaseUrl {
+public class C15 extends GmiBankBaseUrl {
      /*
         Given
             https://reqres.in/api/users/3
